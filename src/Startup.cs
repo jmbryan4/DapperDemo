@@ -20,6 +20,7 @@ namespace DapperDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            services.AddTransient<IUserAdminRepository, UserAdminRepository>();
             services.AddTransient<IStackOverflowRepo, StackOverflowRepo>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

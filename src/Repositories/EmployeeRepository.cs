@@ -41,8 +41,8 @@ namespace DapperDemo.Repositories
         {
             using (IDbConnection conn = Connection)
             {
-                string sql = $@"
-                        SELECT
+                string sql =
+                        $@"SELECT
                             {nameof(Employee.Id)},
                             {nameof(Employee.FirstName)},
                             {nameof(Employee.LastName)},
